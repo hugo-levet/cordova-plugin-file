@@ -189,10 +189,10 @@ cordova.define("cordova-plugin-file.Preparing", function(require, exports, modul
                     granted(true);
                 } else {
                     granted(false);
-                    console.log('Error occured while trying to request Persistent fs quota: blocked by user!');
+                    console.log('Error occurred while trying to request Persistent fs quota: blocked by user!');
                 }
             }, function(e) {
-                console.log('Error occured while trying to request Persistent fs quota: ' + JSON.stringify(e));
+                console.log('Error occurred while trying to request Persistent fs quota: ' + JSON.stringify(e));
                 granted(false);
             });
         }
